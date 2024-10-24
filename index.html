@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,150,0,0&icon_names=arrow_forward_ios" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>You Tube</title>
+
+</head>
+<body id="body">
+    <div class="container">
+        <nav class="flex-div">
+            <div class="nav-left flex-div">
+            <img id="ham-menu" class="ham-menu"  onclick="show_menu(this)" src="image/menu.png" alt="" >
+            <img class="logo" src="image/YouTubeLogo.jpg" alt="">
+            </div>
+            <div class="nav-middle flex-div">
+                <div class="search-box">
+                    <input type="text" placeholder="Search">
+                    <img src="image/search-icon.png" alt="search">
+                </div>
+                <img class="mic" src="image/mic-icon.png" alt="">
+            </div>
+            <div class="nav-right flex-div">
+                <img id="menu-dots" class="dots" onclick="show_menu(this)" src="image/3dots.png" alt="menu" >
+                <img  class="sign-in" src="image/sign-in.png" alt="">
+            </div>
+        </nav>
+        <div id="dot3-menu-list">
+            <ul>
+                <li><img src="image/your-data.png" alt="data"><p>Your data in You Tube</p></li>
+                <li><img src="image/appearence.png" alt=""><p>Appearence:Device theme</p><span class="material-symbols-outlined"> arrow_forward_ios </span></li>
+                <li><img src="image/lang.png" alt=""><p>language:British English</p><span class="material-symbols-outlined"> arrow_forward_ios </span></li>
+                <li><img src="image/RMode.png" alt=""><p>Restricted Mode:off</p><span class="material-symbols-outlined"> arrow_forward_ios </span></li>
+                <li><img src="image/location.png" alt=""><p>Location:United Arab Emirates</p><span class="material-symbols-outlined"> arrow_forward_ios </span></li>
+                <li><img src="image/keyshort.png" alt=""><p>keyboard shortcuts</p></li>
+                <hr>
+                <li><img src="image/settings.png" alt=""><p>settings</p></li>
+                <hr>
+                <li><img src="image/help.png" alt=""><p>help</p></li>
+                <li><img src="image/feedback.png" alt=""><p>Send feedback</p></li>
+            </ul>
+        </div>
+        <div class="side-panel">
+            <div class=" side-Btn Home">  <img class="side-icon" src="image/home.png" alt="home"><p>Home</p></div>
+            <div class=" side-Btn Shorts"><img class="side-icon" src="image/shorts.png" alt="Shorts"> <p>Shorts</p></div>
+            <div class=" side-Btn Subcription"><img class="side-icon" src="image/subscription.png" alt="subscriptions"><p>Subscriptions</p></div>
+            <div class=" side-Btn you"><img class="side-icon" src="image/you_library.png" alt="video library"><p>You</p></div>
+            <div class=" side-Btn history"><img class="side-icon" src="image/history.png" alt="history"><p>History</p></div>
+        </div>
+        <div id="side-bar" class="sidebar">
+           <div class="row1 ">
+                    <img id="ham-menu" class="ham-menu" onclick="show_menu(this)" src="image/menu.png" alt="">
+                    <img class="logo" src="image/YouTubeLogo.jpg" alt="">
+            </div>
+             <div class="sidebar-panels">
+                <div class="panel">
+                    <div class=" panel-Btn ">  <img class="panel-icon" src="image/home.png" alt="home"><p>Home</p></div>
+                    <div class=" panel-Btn "><img class="panel-icon" src="image/shorts.png" alt="Shorts"><p>Shorts</p></div>
+                    <div class=" panel-Btn "><img class="panel-icon" src="image/subscription.png" alt="subscriptions"><p>Subscriptions</p></div>
+                    <hr>
+                    <div class=" panel-Btn "><img class="panel-icon" src="image/you_library.png" alt="video library"><p>You</p></div>
+                    <div class=" panel-Btn "><img class="panel-icon" src="image/history.png" alt="history"><p>History</p></div>
+                    <hr>
+                </div>
+                <div class="para">
+                    <p>Sign in to like videos, comment and subscribe.</p>
+                    <img  class="sign-in" src="image/sign-in.png" alt="sign in">
+                </div>
+                <hr>
+                <div class="panel">
+                    <h4>Explore</h4>
+                    <div class=" panel-Btn">  <img class="panel-icon" src="image/home.png" alt="home"><p>Trending</p></div>
+                    <div class="panel-Btn"><img class="panel-icon" src="image/shorts.png" alt="Shorts"> <p>Music</p></div>
+                    <div class=" panel-Btn"><img class="panel-icon" src="image/subscription.png" alt="subscriptions"><p>Gaming</p></div>
+                    <div class=" panel-Btn"><img class="panel-icon" src="image/you_library.png" alt="video library"><p>Sports</p></div>
+                    <div class=" panel-Btn"><img class="panel-icon" src="image/history.png" alt="history"><p>Podcast</p></div>
+                </div>
+                <hr>
+                <div class="panel">
+                    <h4>More from YouTube</h4>
+                    <div class=" panel-Btn">  <img class="panel-icon" src="image/home.png" alt="home"><p>You Tube Premium</p></div>
+                    <div class=" panel-Btn"><img class="panel-icon" src="image/shorts.png" alt="Shorts"> <p>You Tube Music</p></div>
+                    <div class=" panel-Btn"><img class="panel-icon" src="image/subscription.png" alt="subscriptions"><p>You Tube Kids</p></div>
+                </div>
+                <hr>
+                <div class="panel">
+                    <div class=" panel-Btn">  <img class="panel-icon" src="image/home.png" alt="home"><p>Settings</p></div>
+                    <div class=" panel-Btn"><img class="panel-icon" src="image/shorts.png" alt="Shorts"> <p>Report History</p></div>
+                    <div class=" panel-Btn"><img class="panel-icon" src="image/subscription.png" alt="subscriptions"><p>Help</p></div>
+                    <div class=" panel-Btn"><img class="panel-icon" src="image/subscription.png" alt="subscriptions"><p>Send feedback</p></div>
+                </div>
+                <hr>
+                <div class="side-footer para">
+                    <p>About Press Copyright Contact us Creator Advertise Developers</p>
+                    <p>Terms Privacy Policy & Safety How YouTube works Test new features</p>
+                    <p>&copy; 2024 Google LLC</p>
+                </div>
+            </div>    
+        </div>
+        
+        <div class="main">
+            <div class="chip-container">
+                <button  class="chip-btn Btn-All" ><span style="padding-left:5px"></span>All</button>
+                <button class="chip-btn">Web Development</button>
+                <button class="chip-btn">Computer programming</button>
+                <button class="chip-btn">Music</button>
+                <button class="chip-btn">Gaming</button>
+                <button class="chip-btn">Tamil Cinema</button>
+                <button class="chip-btn">Satire</button>
+                <button class="chip-btn">Dramedy</button>
+                <button class="chip-btn">Study Skills</button>
+                <button class="chip-btn">Sci-fi films</button>
+                <button class="chip-btn">Flights</button>
+                <button class="chip-btn">Thoughts</button>
+                <button class="chip-btn">Live</button>
+                <button class="chip-btn">Asian Music</button>
+                <button class="chip-btn">Animated films</button>
+                <button class="chip-btn">Role-playing Games</button>
+                <button class="chip-btn">Recently uploaded</button>
+                <button class="chip-btn">Watched</button>
+                <div class="chip-next"><img  class="button-next" src="image/arrow_forward.png" alt=""></div>
+            </div>
+            <div class="video-container">
+                <div class="video">
+                    <img src="image/thumb1.png" alt="" class="thumbnail"> 
+                    <div class="video-details">
+                        <img class="profile" src="image/profile1.jpg" alt="profile">
+                        <div class="video-info">
+                            <a class=" video-title" href=""> Boost Your Gut Defences</a>
+                            <p class="channel-desc"><b>Sponsored</b> •  Enterogermina Arabia</p>
+                           
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+
+                    </div>
+                    <div class="sponserBtn"><a class="sponsereda1" href="#">Watch</a> <a class="sponsereda2" href="#">Learn more</a></div>
+                </div>
+                <div class="video">
+                    <img src="image/thumb3.png" alt="" class="thumbnail"> 
+                    <div class="video-details">
+                        <img class="profile" src="image/profile2.jpg" alt="profile">
+                        <div class="video-info">
+                            <a class=" video-title" href=""> Python Full Course for free </a>
+                            <p class="channel-desc">Bro Code</p>
+                            <p class="channel-view">2.2Mviews  • 4years ago</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="image/thumb2.png" alt="" class="thumbnail">
+                    <div class="video-details">
+                        <img class="profile" src="image/profile3.jpg" alt="profile">
+                        <div class="video-info">
+                            <a class=" video-title" href="">Vrill (Official Music Video)</a>
+                            <p class="channel-desc">
+                                Front_Guard</p>
+                            <p class="channel-view">33 views  • 4 months ago</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="gap"></div>
+            <div class="video-container">
+                <div class="video">
+                    <img src="image/thumb2.1.png" alt="" class="thumbnail">
+                    <div class="video-details">
+                        <img class="profile" src="image/balcony-profile.jpg" alt="profile">
+                        <div class="video-info">
+                            <a class=" video-title" href="">Creative Balcony Garden, Turn Your Balcony </a>
+                            <p class="channel-desc">Programming with Mosh</p>
+                            <p class="channel-view">18M views  •  4 years ago</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="image/thumb2.2.png" alt="" class="thumbnail">
+                    <div class="video-details">
+                        <img class="profile" src="image/brototype_profile.jpg" alt="profile">
+                        <div class="video-info">
+                            <a class=" video-title" href="">Part 1 | Introduction To Programming | 3-Hour Coding Challenge </a>
+                            <p class="channel-desc">Brototype Malayalam </p>
+                            <p class="channel-view">1.6M views • 4 years ago</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="image/thumb2.3.png" alt="" class="thumbnail">
+                    <div class="video-details">
+                        <img class="profile" src="image/tedx-profile.jpg" alt="profile">
+                        <div class="video-info">
+                            <a class=" video-title" href=""> Speak it like you’re playing a video</a>
+                            <p class="channel-desc">TEDx Talks</p>
+                            <p class="channel-view">16M views  • 7 years ago</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="gap"></div>
+            <div class="shorts"><img class="shorts-icon" src="image/shorts-red.png" alt=""><p class="shorts-head">Shorts</p></div>
+
+            <div class="shorts-container">
+                <div class="short-video">
+                    <img  class="short-thumb"src="image/short1.png" alt="">
+                    <div class="short-details">
+                        <div class="short-info">
+                            <p class="video-title">Sophia, Are You Wiser Than Humans? | AI Response!</p>
+                            <p class="channel-desc">5.9M views</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div>
+                </div>
+                <div class="short-video">
+                    <img  class="short-thumb"src="image/short2.png" alt="">
+                    <div class="short-details">
+                        <div class="short-info">
+                            <p class="video-title">Prove it!. 🔱</p>
+                            <p class="channel-desc">743K views</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div>    
+                </div>
+                <div class="short-video ">
+                    <img  class="short-thumb"src="image/short3.png" alt="">
+                    <div class="short-details">
+                        <div class="short-info">
+                            <p class="video-title">Rejection will be a part of your life 💯🌸</p>
+                            <p class="channel-desc">2.6M views</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div> 
+                </div>
+                <div class="short-video ">
+                    <img  class="short-thumb"src="image/short4.png" alt="">
+                    <div class="short-details">
+                        <div class="short-info">
+                            <p class="video-title"> SHANGHAI TOWER TALLEST </p>
+                            <p class="channel-desc">2.6M views</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div> 
+                </div>
+                <div class="short-video ">
+                    <img  class="short-thumb"src="image/short5.png" alt="">
+                    <div class="short-details">
+                        <div class="short-info">
+                            <p class="video-title">Muniba Mazari: Change The Way You Think</p>
+                            <p class="channel-desc">59M views</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div> 
+                </div>
+            </div>
+
+           
+            <hr id="Hline-more" class="H-line ">
+            <div id="div-showmore"class="showmore " ><button  id="btshow-more" class="Btshowmore">Show more <img src="image/arrow_down.png" alt=""></buttton></div>
+            <div class="shorts-container"id="short-box2">
+                <div class="short-video">
+                    <img  class="short-thumb"src="image/short1.png" alt="">
+                    <div class="short-details">
+                        <div class="short-info">
+                            <p class="video-title">Sophia, Are You Wiser Than Humans? | AI Response!</p>
+                            <p class="channel-desc">5.9M views</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div>
+                </div>
+                <div class="short-video">
+                    <img  class="short-thumb"src="image/short2.png" alt="">
+                    <div class="short-details">
+                        <div class="short-info">
+                            <p class="video-title">Prove it!. 🔱</p>
+                            <p class="channel-desc">743K views</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div>    
+                </div>
+                <div class="short-video">
+                    <img  class="short-thumb"src="image/short3.png" alt="">
+                    <div class="short-details">
+                        <div class="short-info">
+                            <p class="video-title">Rejection will be a part of your life 💯🌸</p>
+                            <p class="channel-desc">2.6M views</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div> 
+                </div>
+                <div class="short-video">
+                    <img  class="short-thumb"src="image/short4.png" alt="">
+                    <div class="short-details">
+                        <div class="short-info">
+                            <p class="video-title"> SHANGHAI TOWER TALLEST </p>
+                            <p class="channel-desc">2.6M views</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div> 
+                </div>
+                <div class="short-video">
+                    <img  class="short-thumb"src="image/short5.png" alt="">
+                    <div class="short-details">
+                        <div class="short-info">
+                            <p class="video-title">Muniba Mazari: Change The Way You Think</p>
+                            <p class="channel-desc">59M views</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div> 
+                </div>
+            </div>
+            <hr id="Hline-less"class="H-line showless ">
+            <div class="showmore showless"><button id="show-less" class="Btshowmore" href="#">Show less <img src="image/arrow_up.png" alt=""></button></div>
+            <div class="video-container video-container2">
+                <div class="video">
+                    <img src="image/thumb18.png" alt="" class="thumbnail">
+                    <div class="video-details">
+                        <img class="profile" src="image/balcony-profile.jpg" alt="profile">
+                        <div class="video-info">
+                            <a class=" video-title" href="">Chello Divaas</a>
+                            <p class="channel-desc">sheemarooo</p>
+                            <p class="channel-view">18M views  •  4 years ago</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="image/thumb19.png" alt="" class="thumbnail">
+                    <div class="video-details">
+                        <img class="profile" src="image/profile3.jpg" alt="profile">
+                        <div class="video-info">
+                            <a class=" video-title" href="">Kaadal ondru kanden </a>
+                            <p class="channel-desc"> Malayalam </p>
+                            <p class="channel-view">1.6M views • 4 years ago</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div>
+                </div>
+                <div class="video">
+                    <img src="image/thumb20.png" alt="" class="thumbnail">
+                    <div class="video-details">
+                        <img class="profile" src="image/profile3.jpg" alt="profile">
+                        <div class="video-info">
+                            <a class=" video-title" href="">Learning a language? Speak it like you’re playing a video game | Marianna Pascal | TEDxPenangRoad</a>
+                            <p class="channel-desc">TEDx Talks</p>
+                            <p class="channel-view">16M views  • 7 years ago</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="shorts"><img class="shorts-icon" src="image/shorts-red.png" alt=""><p class="shorts-head">Shorts</p></div>
+
+            <div class="shorts-container">
+                <div class="short-video">
+                    <img  class="short-thumb"src="image/short6.png" alt="">
+                    <div class="short-details">
+                        <div class="short-info">
+                            <p class="video-title">100 for both or we 're leaving@yjmoonie...</p>
+                            <p class="channel-desc">1.9M views</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div>
+                </div>
+                <div class="short-video">
+                    <img  class="short-thumb"src="image/short7.png" alt="">
+                    <div class="short-details">
+                        <div class="short-info">
+                            <p class="video-title">Dubai Burj kalipha New Year EVe 2024</p>
+                            <p class="channel-desc">983K views</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div>    
+                </div>
+                <div class="short-video">
+                    <img  class="short-thumb"src="image/short8.png" alt="">
+                    <div class="short-details">
+                        <div class="short-info">
+                            <p class="video-title">FerroFluid vs magnet</p>
+                            <p class="channel-desc">2.6M views</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div> 
+                </div>
+                <div class="short-video">
+                    <img  class="short-thumb"src="image/short9.png" alt="">
+                    <div class="short-details">
+                        <div class="short-info">
+                            <p class="video-title"> places in Real Life# nature #travel</p>
+                            <p class="channel-desc">1.6M views</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div> 
+                </div>
+                <div class="short-video">
+                    <img  class="short-thumb"src="image/short10.png" alt="">
+                    <div class="short-details">
+                        <div class="short-info">
+                            <p class="video-title">Frontend developer vs backend developer</p>
+                            <p class="channel-desc">5M views</p>
+                        </div>
+                        <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                    </div> 
+                </div>
+            </div>
+            <hr id="Hline-more" class="H-line ">
+            <div id="div-showmore"class="showmore " onclick="show_more()" ><button onclick="show_more()" id="btshow-more" class="Btshowmore">Show more <img src="image/arrow_down.png" alt=""></buttton></div>
+                <div class="video-container video-container2">
+                    <div class="video">
+                        <img src="image/thumb7.png" alt="" class="thumbnail">
+                        <div class="video-details">
+                            <img class="profile" src="image/profile5.jpg" alt="profile">
+                            <div class="video-info">
+                                <a class=" video-title" href="">Value of English</a>
+                                <p class="channel-desc">English hub</p>
+                                <p class="channel-view">18M views  •  4 years ago</p>
+                            </div>
+                            <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="image/thumb8.png" alt="" class="thumbnail">
+                        <div class="video-details">
+                            <img class="profile" src="image/profile4.jpg" alt="profile">
+                            <div class="video-info">
+                                <a class=" video-title" href=""> Challenge </a>
+                                <p class="channel-desc">Brohood </p>
+                                <p class="channel-view">1.6M views • 4 years ago</p>
+                            </div>
+                            <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="image/thumb9.png" alt="" class="thumbnail">
+                        <div class="video-details">
+                            <img class="profile" src="image/profile3.jpg" alt="profile">
+                            <div class="video-info">
+                                <a class=" video-title" href="">Learning and  playing a video game susaun </a>
+                                <p class="channel-desc">hash Talks</p>
+                                <p class="channel-view">16M views  • 7 years ago</p>
+                            </div>
+                            <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-container video-container2">
+                    <div class="video">
+                        <img src="image/thumb5.png" alt="" class="thumbnail">
+                        <div class="video-details">
+                            <img class="profile" src="image/balcony-profile.jpg" alt="profile">
+                            <div class="video-info">
+                                <a class=" video-title" href=""> Beautiful Garden With playing a video game </a>
+                                <p class="channel-desc"> Mosh</p>
+                                <p class="channel-view">18M views  •  4 years ago</p>
+                            </div>
+                            <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="image/thumb10.png" alt="" class="thumbnail">
+                        <div class="video-details">
+                            <img class="profile" src="image/profile4.jpg" alt="profile">
+                            <div class="video-info">
+                                <a class=" video-title" href="">Big Dream </a>
+                                <p class="channel-desc">Blam </p>
+                                <p class="channel-view">1.6M views • 4 years ago</p>
+                            </div>
+                            <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="image/thumb11.png" alt="" class="thumbnail">
+                        <div class="video-details">
+                            <img class="profile" src="image/profile1.jpg" alt="profile">
+                            <div class="video-info">
+                                <a class=" video-title" href="">Learning a language? Speak it like you’re playing a video game | Marianna Pascal | TEDxPenangRoad</a>
+                                <p class="channel-desc">TEDx Talks</p>
+                                <p class="channel-view">16M views  • 7 years ago</p>
+                            </div>
+                            <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-container video-container2">
+                    <div class="video">
+                        <img src="image/thumb12.png" alt="" class="thumbnail">
+                        <div class="video-details">
+                            <img class="profile" src="image/balcony-profile.jpg" alt="profile">
+                            <div class="video-info">
+                                <a class=" video-title" href="">Harvard CS50’s Introduction to Programming with Python</a>
+                                <p class="channel-desc">freeCodeCamp.org</p>
+                                <p class="channel-view">18M views  •  4 years ago</p>
+                            </div>
+                            <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="image/thumb13.png" alt="" class="thumbnail">
+                        <div class="video-details">
+                            <img class="profile" src="image/profile3.jpg" alt="profile">
+                            <div class="video-info">
+                                <a class=" video-title" href="">2000$ AI Bot </a>
+                                <p class="channel-desc">Tech tim </p>
+                                <p class="channel-view">1.6M views • 4 years ago</p>
+                            </div>
+                            <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="image/thumb14.png" alt="" class="thumbnail">
+                        <div class="video-details">
+                            <img class="profile" src="image/profile5.jpg" alt="profile">
+                            <div class="video-info">
+                                <a class=" video-title" href="">L you’re playing a video game | a Pascal |</a>
+                                <p class="channel-desc">TTalks</p>
+                                <p class="channel-view">16M views  • 7 years ago</p>
+                            </div>
+                            <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase">
+                    <div class="left-showcase">
+                        <div class="YmusicIcon"><img class="YmusicIcon-img" src="image/youtube-music.png" alt=""></div>
+                    </div>
+                    <div class="right-showcase">
+                       <div class="Youtubemusic">
+                            <div class="btclose">X</div>
+                            <h1>Try YouTube Music Premium</h1>
+                            <p >Listen ad-free, offline, and in the background in the YouTube Music app </p>
+                            <a class="BtMonthFree" href="">1 month free</a>   
+                           
+                       </div> 
+
+                    </div>
+                </div>
+                <div class="video-container video-container2">
+                    <div class="video">
+                        <img src="image/thumb15.png" alt="" class="thumbnail">
+                        <div class="video-details">
+                            <img class="profile" src="image/balcony-profile.jpg" alt="profile">
+                            <div class="video-info">
+                                <a class=" video-title" href="">KILIYE.....</a>
+                                <p class="channel-desc"> with Mosha</p>
+                                <p class="channel-view">18M views  •  4 years ago</p>
+                            </div>
+                            <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="image/thumb17.png" alt="" class="thumbnail">
+                        <div class="video-details">
+                            <img class="profile" src="image/profile3.jpg" alt="profile">
+                            <div class="video-info">
+                                <a class=" video-title" href=""> | Introduction To speaking </a>
+                                <p class="channel-desc">Bralam </p>
+                                <p class="channel-view">1.6M views • 4 years ago</p>
+                            </div>
+                            <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="image/thumb16.png" alt="" class="thumbnail">
+                        <div class="video-details">
+                            <img class="profile" src="image/profile4.jpg" alt="profile">
+                            <div class="video-info">
+                                <a class=" video-title" href="">Learning a language? Speak it like you’re playing a video game | Marianna Pascal | TEDxPenangRoad</a>
+                                <p class="channel-desc">TEDx Talks</p>
+                                <p class="channel-view">16M views  • 7 years ago</p>
+                            </div>
+                            <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-container video-container2">
+                    <div class="video">
+                        <img src="image/thumb7.png" alt="" class="thumbnail">
+                        <div class="video-details">
+                            <img class="profile" src="image/balcony-profile.jpg" alt="profile">
+                            <div class="video-info">
+                                <a class=" video-title" href="">Creative English</a>
+                                <p class="channel-desc"> Moma with </p>
+                                <p class="channel-view">18M views  •  4 years ago</p>
+                            </div>
+                            <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="image/thumb10.png" alt="" class="thumbnail">
+                        <div class="video-details">
+                            <img class="profile" src="image/profile5.jpg" alt="profile">
+                            <div class="video-info">
+                                <a class=" video-title" href="">Dream Challenge </a>
+                                <p class="channel-desc">B.info </p>
+                                <p class="channel-view">1.6M views • 3 years ago</p>
+                            </div>
+                            <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="image/thumb2.3.png" alt="" class="thumbnail">
+                        <div class="video-details">
+                            <img class="profile" src="image/profile1.jpg" alt="profile">
+                            <div class="video-info">
+                                <a class=" video-title" href="">Learning a language? Speak it like you’re playing a video game | Marianna Pascal | TEDxPenangRoad</a>
+                                <p class="channel-desc">TEDx Talks</p>
+                                <p class="channel-view">16M views  • 7 years ago</p>
+                            </div>
+                            <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-container video-container2">
+                    <div class="video">
+                        <img src="image/thumb2.1.png" alt="" class="thumbnail">
+                        <div class="video-details">
+                            <img class="profile" src="image/balcony-profile.jpg" alt="profile">
+                            <div class="video-info">
+                                <a class=" video-title" href="">Creative Balcony Garden, Turn Your Balcony Into A Beautiful Garden </a>
+                                <p class="channel-desc"> with Mosha</p>
+                                <p class="channel-view">18M views  •  4 years ago</p>
+                            </div>
+                            <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="image/thumb2.2.png" alt="" class="thumbnail">
+                        <div class="video-details">
+                            <img class="profile" src="image/brototype_profile.jpg" alt="profile">
+                            <div class="video-info">
+                                <a class=" video-title" href="">Part 1 | Introduction To Programming | 3-Hour Coding Challenge </a>
+                                <p class="channel-desc">Brototype Malayalam </p>
+                                <p class="channel-view">1.6M views • 4 years ago</p>
+                            </div>
+                            <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <img src="image/thumb2.3.png" alt="" class="thumbnail">
+                        <div class="video-details">
+                            <img class="profile" src="image/tedx-profile.jpg" alt="profile">
+                            <div class="video-info">
+                                <a class=" video-title" href="">Learning a language? Speak it like you’re playing a video game | Marianna Pascal | TEDxPenangRoad</a>
+                                <p class="channel-desc">TEDx Talks</p>
+                                <p class="channel-view">16M views  • 7 years ago</p>
+                            </div>
+                            <div class="video-info-menu" ><img class="dot-menu" src="image/3dots.png" alt="menu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    <script>
+       
+        function show_menu(menu)
+        {   var body =document.getElementById('body')
+            if(menu.id=="menu-dots")
+            {   var menu1 = menu.id;
+                var menu_list1  = document.getElementById("dot3-menu-list")
+            }   
+            else if(menu.id=="ham-menu")
+            {   var menu1 = menu.id;
+                var menu_list1  = document.getElementById("side-bar")  
+                console.log("hamburger menu")   
+            }
+            if(menu_list1.style.display=='none')
+            {    
+                body.className='no-scroll' 
+                menu_list1.style.display='block'
+                menu_list1.style.position='fixed'
+                
+               
+            }
+            else{
+                     menu_list1.style.display='none'
+                     body.className="scorll"
+            }
+            
+       }
+       
+    </script>
+</body>
+
+</html>
